@@ -85,7 +85,7 @@ app.listen(port,()=>{
    console.log(`server is up on port ${port}`);
 });
 
-app.get('/Project',(req,res)=>{
+app.get('/project',(req,res)=>{
     //passing in data into the template via a second arg
     res.render('project.hbs',{
         pageTitle:'project Page',
