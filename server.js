@@ -85,3 +85,11 @@ app.listen(port,()=>{
    console.log(`server is up on port ${port}`);
 });
 
+app.get('/Project',(req,res)=>{
+    //passing in data into the template via a second arg
+    res.render('project.hbs',{
+        pageTitle:'project Page',
+        
+        // currentYear: new Date().getFullYear()
+    });
+});
